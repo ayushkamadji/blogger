@@ -1,0 +1,11 @@
+<h1>Tags</h1>
+<ul>
+  <% @tags.each do |tag| %>
+    <li style="border-bottom: 1px dotted gray">
+      <%= link_to tag.name, tag_path(tag) %>
+      <div style="float: right"> 
+        <%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Are you sure?"} %> 
+      </div>
+    </li>
+  <% end %>
+</ul>
