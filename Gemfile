@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 ### MANUAL GEMS START ###
 gem 'paperclip'
+gem 'sorcery'
 ### MANUAL GEMS END ###
 
 group :development, :test do
